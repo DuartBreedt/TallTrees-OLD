@@ -47,3 +47,30 @@
 #section-01 .row:nth-child(2) img {
 	margin-top: -50px;
 }
+#section-02 {
+	margin-top: 100px;
+}
+.educator-profile {
+	margin-top: 100px;
+}
+.educator-profile h3 {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+.educator-profile h4 {
+	font-family: 'calib';
+	text-align: left;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 20px;
+}
+.educator-profile p {
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 0;
+	text-align: left;
+}
+.inter-hyperlinks {
+	margin-top: 50px;
+}

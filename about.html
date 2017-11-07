@@ -7,7 +7,7 @@
 		<meta name="keywords" content="Stutterheim; TallTrees; Montessori; Pre-school; preschool; play school; private school; alternative; education; playschool; school; learning community; community; democratic " />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
+		<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
 		<link rel="stylesheet" type="text/css" href="global.css" />
 		<link rel="stylesheet" type="text/css" href="about.css" />
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -15,39 +15,43 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="global.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+
+				$(".inter-hyperlinks #links div:nth-child(1) a").click(function () {				// Our Educators
+					$('html, body').animate({ scrollTop: $("#section-02").offset().top }, 2000);
+					return false;
+				});
+
+				$(".inter-hyperlinks #links div:nth-child(2) a").click(function () {				// Our Curriculum
+					$('html, body').animate({ scrollTop: $("#section-03").offset().top }, 2000);
+					return false;
+				});
+
+				$(".inter-hyperlinks #links div:nth-child(3) a").click(function () {				// Our History
+					$('html, body').animate({ scrollTop: $("#section-04").offset().top }, 2000);
+					return false;
+				});
+
+				$("#menu").on('click', 'nav #contact-us-btn', function () {
+					$('html, body').animate({ scrollTop: $("#section-08").offset().top }, 2000);
+					return false;
+				});
+
+				$('#section-08').load('contact.html');
+
+				$('#menu').load('menu.html', function () {
+					setActiveLink('about');
+				});
+			});
+		</script>
 
 		<title>About Us | TallTrees</title>
 	</head>
 	<body>
 		<div class="container-fluid">
 			<section class="row" id="section-01">
-				<div class="row">
-					
-					<!-- Navigation -->
-					<nav class="navbar navbar-default col-md-2 col-md-offset-10 col-lg-1 col-lg-offset-11">
-					<!-- <nav class="navbar navbar-default col-md-2 col-md-offset-0 col-lg-1 col-lg-offset-0"> -->
-		  				<div class="container-fluid">
-					     	<ul class="nav navbar-nav">
-						        <li class="dropdown">
-							        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-menu-hamburger"></span> Menu
-							        </a>
-							        <ul class="dropdown-menu">
-							        	<li><a href="index.html">Home</a></li>
-							        	<li><a class="important-link" href="application-forms.html">Application Forms</a></li>
-							        	<li><a href="acorns.html">Acorns</a></li>
-							        	<li><a href="seedlings-saplings.html">Seedlings &amp; Saplings</a></li>
-							        	<li><a href="oaks.html">Oaks</a></li>
-							        	<li><a href="index.html#section-03">Our Motto</a></li>
-							          	<li><a href="values.html">Our Values</a></li>
-							          	<li><a href="aim.html">Our Aim</a></li>	
-							          	<li><a href="#" class="active"><span class="glyphicon glyphicon-leaf active-glyph"></span> About Us</a></li>
-							          	<li><a href="#" id="contact-us-btn">Contact Us</a></li> 
-							        </ul>
-						     	</li>	
-			    			</ul>
-						</div>    
-					</nav>
-				</div>	
+				<div class="row" id="menu"></div>	
 
 				<!-- Logo & Motto -->
 				<div class="row">
@@ -56,44 +60,171 @@
 						<p>We are an independent, Montessori-inspired, democratic Learning Community situated at the forest verge in Stutterheim, in the rural Eastern Cape.</p>
 					</div>	
 				</div>
+
+				<!-- Green Buttons -->
+				<div class="inter-hyperlinks row">
+					<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
+						<div id="links">
+							<div class="col-md-4 col-lg-4">
+								<a href="#section-02" class="btn btn-default">
+									<p class="col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0 col-sm-2 col-sm-offset-4 col-xs-2 col-xs-offset-3">Our Educators</p>
+								</a>
+							</div>
+							<div class="col-md-4 col-lg-4">
+								<a href="#section-03" class="btn btn-default">
+									<p class="col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0 col-sm-2 col-sm-offset-4 col-xs-2 col-xs-offset-3">Our Curriculum</p>
+								</a>
+							</div>
+							<div class="col-md-4 col-lg-4">
+								<a href="#section-04" class="btn btn-default">
+									<p class="col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0 col-sm-2 col-sm-offset-4 col-xs-2 col-xs-offset-3">Our History</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class="row" id="scroll-down"><span class="glyphicon glyphicon-chevron-down"></span></div>
 			</section>
 
 			<!-- Content -->
 			<section class="row content-section" id="section-02">
 				<div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+					<h2 class="green-text">Our Educators</h2>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at turpis nec lacus vestibulum efficitur. Nulla at turpis sodales, euismod eros quis, scelerisque eros. Praesent luctus mi sit amet est tempor, sit amet tincidunt neque imperdiet. Praesent euismod diam vel blandit imperdiet. Aenean suscipit lorem a dictum suscipit. Morbi at urna lacinia, hendrerit arcu quis, pharetra urna. Aliquam tincidunt, elit ut fermentum ornare, felis neque volutpat magna, condimentum malesuada nibh velit eget leo. Curabitur vulputate quis ipsum ac condimentum. Fusce ac varius ante. Nullam nec sodales mi. Fusce vitae vestibulum massa.
-
-						Aliquam tincidunt suscipit erat sit amet tincidunt. Proin vel iaculis eros. Suspendisse nec commodo justo, quis hendrerit dolor. Nunc placerat cursus felis placerat sollicitudin. Phasellus blandit nunc eu aliquet rhoncus. Pellentesque porttitor laoreet orci. Nunc semper molestie bibendum. Morbi non elit ipsum.
-
-						Suspendisse scelerisque eu nibh vitae eleifend. Aenean pulvinar posuere lobortis. Aliquam molestie lacinia dolor, quis porttitor metus blandit at. Nullam commodo elit eget quam laoreet sodales. Etiam lobortis viverra ligula vel imperdiet. Cras lobortis feugiat malesuada. Phasellus dapibus, ex vel maximus mattis, lacus nunc tincidunt ipsum, vitae vulputate urna tortor vitae arcu. Morbi nec condimentum diam. Suspendisse a eros et mauris aliquet egestas in vel odio. Duis elementum mauris lacus, id placerat arcu mollis feugiat. Etiam euismod, mi vel tincidunt rhoncus, dolor lectus lacinia est, ac faucibus neque ipsum quis enim. Suspendisse pulvinar, sapien nec placerat aliquet, justo quam tempus est, sit amet porttitor leo mauris ut augue. Nulla maximus, urna at lacinia gravida, ligula eros pretium quam, vel tincidunt enim libero a lorem. Proin a lectus imperdiet ligula scelerisque cursus. Sed id sapien tellus.
-
-						Aliquam porta augue vitae libero ullamcorper, ac varius velit facilisis. Etiam id pretium libero, a dictum justo. Vestibulum eget urna ut felis euismod faucibus. Curabitur ultricies ut elit at iaculis. Mauris blandit molestie velit egestas porttitor. Etiam eleifend auctor nunc vitae consequat. Fusce vitae lectus ante. Suspendisse justo sapien, laoreet ac malesuada eu, posuere ut nunc. Etiam consectetur turpis vitae ante condimentum faucibus eget sed massa. Donec bibendum massa sed libero tempus, id pellentesque ligula hendrerit.
-
-						Proin ullamcorper ex at eros sagittis molestie. Vivamus tempus in justo et laoreet. Integer tincidunt tristique tellus id auctor. Nullam sodales tellus fermentum, tincidunt orci quis, dictum justo. Praesent orci ligula, ultricies sed ligula nec, malesuada imperdiet justo. Sed ut volutpat mauris, id laoreet ex. Sed eros nunc, semper sed ultrices sed, varius a magna.
-
-						Morbi ornare gravida consequat. Cras euismod orci vitae enim pretium, sit amet convallis nunc fringilla. Nullam efficitur aliquam blandit. Vivamus vestibulum mauris diam. Praesent vel tortor erat. Nunc a odio pharetra, pulvinar nisl eget, luctus nulla. Etiam non pulvinar dui. Phasellus ac mauris quis enim bibendum blandit. Etiam nec ligula quis augue posuere pellentesque. Vestibulum euismod iaculis lorem in lobortis.
-
-						Donec luctus eros at tincidunt vestibulum. Vivamus condimentum risus nulla. Nunc id eleifend tellus. Aenean mattis in eros nec sagittis. Cras orci metus, malesuada a viverra at, bibendum sit amet ante. Aenean efficitur tincidunt rutrum. Nunc eu ante eget enim commodo sagittis ac id purus. Nullam molestie viverra sollicitudin. In hac habitasse platea dictumst. Donec mi enim, auctor vitae dui in, imperdiet varius ex. Maecenas ut odio at erat eleifend venenatis.
-
-						Nunc tincidunt augue maximus nunc congue, id congue metus luctus. Donec quam risus, eleifend a finibus sit amet, rutrum vitae metus. Phasellus vel velit a odio interdum efficitur ac nec velit. Nullam ac nulla dictum, vestibulum risus id, fermentum tortor. Donec eu ornare enim. Aliquam ut nulla in sapien pharetra molestie. Cras malesuada metus nibh, sit amet condimentum sapien scelerisque sit amet. Maecenas malesuada pellentesque ipsum ut elementum. Integer imperdiet finibus dui, eget convallis leo mattis eget. Praesent et sagittis justo. Morbi suscipit nulla dolor, sit amet lobortis est egestas quis. Nullam felis nibh, imperdiet ac consequat a, varius blandit felis.
-
-						Integer efficitur feugiat magna. Pellentesque egestas fermentum posuere. Quisque fermentum magna cursus, eleifend orci a, ultrices eros. Fusce ornare fermentum augue eu commodo. Praesent fringilla malesuada massa in mollis. Pellentesque volutpat velit eget eros consequat, vitae consectetur tortor vulputate. Curabitur elementum gravida tempus.
-
-						Praesent nec nulla ligula. Donec vel interdum metus, eget pellentesque tortor. Maecenas tortor ipsum, tempor vitae nibh ac, mollis commodo nunc. Nunc a mauris convallis purus pellentesque porttitor id eu nunc. Curabitur ut vulputate leo, facilisis bibendum odio. Sed malesuada volutpat ligula in feugiat. Cras euismod semper tellus, a volutpat neque lacinia quis. Etiam turpis ipsum, aliquam non dictum non, dictum vel nisi. Vestibulum ornare ipsum at purus ultrices viverra. Cras eget justo sit amet ex porttitor euismod aliquam ac nunc. Pellentesque sit amet placerat lacus. Proin et diam nec augue molestie egestas. Duis maximus convallis nibh ut imperdiet. Fusce quis nisl velit. In eu augue nibh.
+						TallTrees is constantly growing! As the demand for quality alternative schooling booms so does the demand for passionate educators.
 					</p>
+					<div class="break-strip col-md-12"></div>
+					<div class="educator-profile">
+						<div class="col-md-4 col-sm-6">
+							<h3 class="green-text">Adele Breedt</h3>
+							<h4>Role</h4>
+							<p>Directress (or Principal) of TallTrees</p>
+						</div>
+						<div class="col-md-8 col-sm-6">
+							<p>
+								Adele is busy
+								with her Diploma in Early Childhood Development through The College of Modern Montessori. Adèle taught Grades 5 and 6 and
+								was the Head of Department of the Intermediate Phase at a local independent school prior to this.
+							</p>
+							<img class="img-md-float-right" src="images/square-placeholder.png" />
+							<p>
+								She served on the Executive
+								of the Eastern Cape Homeschooling Association for 10 years, chairing it (with her husband) for 7 of those years. Adèle has
+								consulted with hundreds of homeschooling families referred to her by paediatricians, psychologists, social workers and the
+								Department of Education to help them find the best educational approach for their families. Most everything she knows, that
+								is true about learning and teaching she learnt alongside her sons through observation, enquiry, experimentation and innovation.
+							</p>
+							<p>
+								They learnt together through challenging times (dyslexia &amp; ADD) but also through exhilarating times of high achievement (all
+								three boys applied for admission to tertiary institutions with A aggregates from the University of Cambridge). 
+								The theories she applied and patiently held onto have proven to be true and it is with this confidence
+								that Adèle is ready to guide yet another generation to their full potential.
+							</p>
+						</div>
+					</div>
+					<div class="break-strip col-md-12"></div>
 				</div>
 			</section>
+
+			<section class="row content-section" id="section-03">
+				<div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+					<h2 class="green-text">Our Curriculum</h2>
+					<p>
+						We do not follow anything but the child.
+						<br/> Learning should be a never-ending adventure, a wondrous journey of self-driven discovery.
+					</p>
+					<img class="img-md-float-right" src="images/square-placeholder.png" />
+					<p>
+						We believe that all children intrinsically know when they need what in order to auto-educate themselves. 
+						Furthermore we know that each child has his and her own unique developmental timetable and that there is no "average child".
+						<br/><br/> We try to give our learners skills and character qualities with which to navigate and succeed in the world, while
+						focusing on their strengths so that they might excel in those specific areas, as these strengths are the clues to their purpose.
+						<br/><br/> We follow a play-based, developmentally appropriate, hands-on, discovery approach inspired by Dr Maria Montessori's philosophies,
+						integrating literature rich thematic work (unit studies) with our activities. Our learners are thus not graded but grouped
+						in vertical 3 year age groups or phases. Assessment is done on a daily, continual basis culminating in annual narrative reports.
+					</p>
+					<div class="col-md-12 img-array">
+							<img src="images/square-placeholder.png" />
+							<img src="images/square-placeholder.png" />
+							<img src="images/square-placeholder.png" />
+							<img src="images/square-placeholder.png" />
+					</div>
+					<p style="text-align: left;">
+						Our selection of curriula depends on which age group the child falls into but could include the following:
+					</p>
+					<ul style="text-align: left;">
+						<li>International Examinations (CIE)</li>
+						<li>General Educational Development (GED)</li>
+						<li>Scholastic Aptitude/Assessment Test (SAT)</li>
+						<li>Accelerated Christian Education (ACE)</li>
+						<li>Montessori Education</li>
+					</ul>
+					<p>
+						Please visit the individual age groups below for more information.
+					</p>
+					<!-- Green Buttons -->
+					&nbsp;
+					<div class="row">
+						<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
+							<div id="links">
+								<div class="col-md-3 col-lg-3">
+									<a href="acorns.html" class="btn btn-default">
+										<p class="col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0 col-sm-2 col-sm-offset-4 col-xs-2 col-xs-offset-3">Acorns</p>
+										<p class="col-md-12 col-lg-12 col-sm-2 col-sm-offset-0 col-xs-2 col-xs-offset-2">3 - 6 Years</p>
+									</a>
+								</div>
+								<div class="col-md-3 col-lg-3">
+									<a href="seedlings-saplings.html" class="btn btn-default">
+										<p class="col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0 col-sm-2 col-sm-offset-4 col-xs-2 col-xs-offset-3">Seedlings</p>
+										<p class="col-md-12 col-lg-12 col-sm-2 col-sm-offset-0 col-xs-2 col-xs-offset-2">6 - 9 Years</p>
+									</a>
+								</div>
+								<div class="col-md-3 col-lg-3">
+									<a href="seedlings-saplings.html" class="btn btn-default">
+										<p class="col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0 col-sm-2 col-sm-offset-4 col-xs-2 col-xs-offset-3">Saplings</p>
+										<p class="col-md-12 col-lg-12 col-sm-2 col-sm-offset-0 col-xs-2 col-xs-offset-2">9 - 12 Years</p>
+									</a>
+								</div>
+								<div class="col-md-3 col-lg-3">
+									<a href="oaks.html" class="btn btn-default">
+										<p class="col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0 col-sm-2 col-sm-offset-4 col-xs-2 col-xs-offset-3">Oaks</p>
+										<p class="col-md-12 col-lg-12 col-sm-2 col-sm-offset-0 col-xs-2 col-xs-offset-2">12 - 18 Years</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<p>
+						 We teach a Christian, creationist worldview even though some of the educational philosophies and methodologies we look at
+						for inspiration are humanistic and of a New Age persuasion.
+						<br/>We believe that our job as parents and educators is to help children to discover and develop their talents and passions in a safe environment.
+					</p>
+					<p>
+						Our capacity is no more than a total of 70 children. 
+						<br/> We intend to have one class per phase with a maximum of 10 children of
+						mixed ages in each phase. 
+						<br/> Each class (phase) will have one teacher (facilitator).
+					</p>
+					<p>
+						 For informaton regarding <span class="emphasis">school hours</span> please visit the individual age groups above.
+					<div class="break-strip col-md-12"></div>
+				</div>
+			</section>
+			
+			<section class="row content-section" id="section-04">
+				<div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+					<h2 class="green-text">Our History</h2>
+					<p>
+						TallTrees Learning Community was founded by Adele Breedt in --insert year--. 
+						At the time Stutterheim suffered from a lack of variety when it came to schooling options.
+					</p>
+					<div class="break-strip col-md-12"></div>
+				</div>
+			</section>
+
 			<!-- Contact -->
-			<section class="row contact-section" id="section-08">
-				<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1" >		
-					<h3>Contact Us</h3>
-					<p><span class="glyphicon glyphicon-user"></span> Adèle Breedt</p>
-					<p><span class="glyphicon glyphicon-earphone"></span> 082 975 1721</p>
-					<p><span class="glyphicon glyphicon-envelope"></span> info@talltrees-school.co.za</p>
-				</div>
-			</section>
+			<section class="row contact-section" id="section-08"></section>
 
 		</div>
 	</body>

@@ -10,6 +10,17 @@
 #section-01 img{
 	width: 100%;
 }
+section h2{
+	background-color: rgba(2,2,2,0.0);
+	padding: 6px 20px;
+	font-family: 'playfair';
+	font-family: 'letter';
+	text-transform: uppercase;
+	font-size: 40px;
+	display: inline-block;
+	color: #f2f2f2;
+	margin-top: 20px;
+}
 @media all and (min-width: 1200px){
 	#section-01 {
 		background-image: url("images/home/section-01-lg.jpg");

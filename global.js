@@ -24,4 +24,32 @@ $(document).ready(function(){
 	    fading.css('opacity', opacity).html();
 	});
 
+	// $('#menu').load('menu.html'); 
+
 });
+
+function setActiveLink (page) {
+	var activeLink;
+	switch (page) {
+		case "home":
+			activeLink = $('#menu .dropdown-menu li:nth-child(1) a');
+			break;
+		case "acorns":
+			activeLink = $('#menu .dropdown-menu li:nth-child(2) a');
+			break;
+		case "seedlings":
+			activeLink = $('#menu .dropdown-menu li:nth-child(3) a');
+			break;
+		case "oaks":
+			activeLink = $('#menu .dropdown-menu li:nth-child(4) a');
+			break;
+		case "stories":
+			activeLink = $('#menu .dropdown-menu li:nth-child(5) a');
+			break;
+		case "about":
+			activeLink = $('#menu .dropdown-menu li:nth-child(6) a');
+			break;
+	}
+	activeLink.addClass("active");
+	activeLink.prepend('<span class="glyphicon glyphicon-leaf active-glyph"></span> ');
+}
