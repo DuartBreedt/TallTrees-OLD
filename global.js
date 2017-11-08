@@ -1,3 +1,4 @@
+var menuIsOpen = false;
 $(document).ready(function(){
     $("#section-01 .row").animate({
         opacity: '1.0'
@@ -24,31 +25,51 @@ $(document).ready(function(){
 	    fading.css('opacity', opacity).html();
 	});
 
-	// $('#menu').load('menu.html'); 
+	$("#menu").on("click", ".menu-btn", function(){
+		toggleMenu();
+	});
 
 });
+
+function toggleMenu() {
+	if (menuIsOpen) {
+		menuIsOpen = false;
+		$(".custom-menu-items").animate({ 
+			right: '-210px',
+			opacity: 0
+		}, 200); 
+	} else {
+		menuIsOpen = true;
+		$(".custom-menu-items").animate({ 
+			right: '0px',
+			opacity: 1
+		}, 200); 
+	}
+	
+}
 
 function setActiveLink (page) {
 	var activeLink;
 	switch (page) {
 		case "home":
-			activeLink = $('#menu .dropdown-menu li:nth-child(1) a');
-			break;
-		case "acorns":
-			activeLink = $('#menu .dropdown-menu li:nth-child(2) a');
-			break;
-		case "seedlings":
-			activeLink = $('#menu .dropdown-menu li:nth-child(3) a');
-			break;
-		case "oaks":
-			activeLink = $('#menu .dropdown-menu li:nth-child(4) a');
+			activeLink = $('#menu .custom-menu-items-top .custom-menu-item:nth-child(2) a');
 			break;
 		case "stories":
-			activeLink = $('#menu .dropdown-menu li:nth-child(5) a');
+			activeLink = $('#menu .custom-menu-items-top .custom-menu-item:nth-child(3) a');
 			break;
 		case "about":
-			activeLink = $('#menu .dropdown-menu li:nth-child(6) a');
+			activeLink = $('#menu .custom-menu-items-top .custom-menu-item:nth-child(4) a');
 			break;
+		case "acorns":
+			activeLink = $('#menu .custom-menu-items-bottom .custom-menu-item:nth-child(3) a');
+			break;
+		case "seedlings":
+			activeLink = $('#menu .custom-menu-items-bottom .custom-menu-item:nth-child(4) a');
+			break;
+		case "oaks":
+			activeLink = $('#menu .custom-menu-items-bottom .custom-menu-item:nth-child(5) a');
+			break;
+		
 	}
 	activeLink.addClass("active");
 	activeLink.prepend('<span class="glyphicon glyphicon-leaf active-glyph"></span> ');
