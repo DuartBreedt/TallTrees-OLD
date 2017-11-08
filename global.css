@@ -89,7 +89,6 @@ body #logo {
 	background-color: #f2f2f2;
 	padding: 10px 15px ;
 	border-radius: 5px;
-	/*width: 100%;*/
 }
 
 #important-message p:nth-child(2){
@@ -100,20 +99,17 @@ body #logo {
 }
 .emphasis {
 	text-transform: uppercase;
-	/* font-family: 'letter'; */
 	font-weight: bold;
 	color: #6C924F;
 }
 .img-md-float-right {
 	float: right;
 	width: 30%;
-	/* clear: both; */
 	padding: 10px;
 }
 .img-md-float-left {
 	float: left;
 	width: 30%;
-	/* clear: both; */
 	padding: 10px;
 }
 .img-array img {
@@ -200,7 +196,6 @@ body .dropdown-menu>li>a:hover {
 }
 #menu button {
 	background-color: #EEE;
-	/* text-align: left; */
 	text-transform: uppercase;
 	font-family: 'letter';
 	text-shadow: none;
@@ -319,7 +314,6 @@ section .read-more-btn p{
 	text-align: center;
 	font-family: 'calib';
 	text-transform: uppercase;
-	/*font-weight: bold;*/
 	font-size: 14px;
 	padding: 5px 2px 2px 2px;
 	color: #f2f2f2;
@@ -350,7 +344,6 @@ section div > p {
 	padding: 8px 12px;
 	margin-bottom: 5px;
 	background-color: #41715b;
-	/*width: 150px;*/
 	width: 100%;
 	border: 2px solid rgba(0,0,0,0);
 }
