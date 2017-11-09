@@ -33,13 +33,6 @@
 					return false;
 				});
 
-				$("#menu").on('click', '#contact-us-btn', function () {
-					$('html, body').animate({ scrollTop: $("#section-08").offset().top }, 2000);
-					return false;
-				});
-
-				$('#section-08').load('contact.html');
-
 				$('#menu').load('menu.html', function () {
 					setActiveLink('about');
 				});
@@ -52,6 +45,7 @@
 		<div class="container-fluid">
 			<section class="row" id="section-01">
 
+				<div id="loader"><img src="images/loader.gif"/></div>
 				<div id="menu"></div>
 
 				<!-- Logo & Motto -->
@@ -68,17 +62,17 @@
 						<div id="links">
 							<div class="col-md-4 col-lg-4">
 								<a href="#section-02" class="btn btn-default">
-									<p class="col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0 col-sm-2 col-sm-offset-4 col-xs-2 col-xs-offset-3">Our Educators</p>
+									<p>Our Educators</p>
 								</a>
 							</div>
 							<div class="col-md-4 col-lg-4">
 								<a href="#section-03" class="btn btn-default">
-									<p class="col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0 col-sm-2 col-sm-offset-4 col-xs-2 col-xs-offset-3">Our Curriculum</p>
+									<p>Our Curriculum</p>
 								</a>
 							</div>
 							<div class="col-md-4 col-lg-4">
 								<a href="#section-04" class="btn btn-default">
-									<p class="col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0 col-sm-2 col-sm-offset-4 col-xs-2 col-xs-offset-3">Our Philosophy</p>
+									<p>Our Philosophy</p>
 								</a>
 							</div>
 						</div>
@@ -150,26 +144,26 @@
 							<div id="links">
 								<div class="col-md-3 col-lg-3">
 									<a href="acorns.html" class="btn btn-default">
-										<p class="col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0 col-sm-2 col-sm-offset-4 col-xs-2 col-xs-offset-3">Acorns</p>
-										<p class="col-md-12 col-lg-12 col-sm-2 col-sm-offset-0 col-xs-2 col-xs-offset-2">3 - 6 Years</p>
+										<p class="col-md-12 col-lg-12 col-sm-12 col-xs-12">Acorns</p>
+										<p class="col-md-12 col-lg-12 col-sm-12 col-xs-12">3 - 6 Years</p>
 									</a>
 								</div>
 								<div class="col-md-3 col-lg-3">
 									<a href="seedlings-saplings.html" class="btn btn-default">
-										<p class="col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0 col-sm-2 col-sm-offset-4 col-xs-2 col-xs-offset-3">Seedlings</p>
-										<p class="col-md-12 col-lg-12 col-sm-2 col-sm-offset-0 col-xs-2 col-xs-offset-2">6 - 9 Years</p>
+										<p class="col-md-12 col-lg-12 col-sm-12 col-xs-12">Seedlings</p>
+										<p class="col-md-12 col-lg-12 col-sm-12 col-xs-12">6 - 9 Years</p>
 									</a>
 								</div>
 								<div class="col-md-3 col-lg-3">
 									<a href="seedlings-saplings.html" class="btn btn-default">
-										<p class="col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0 col-sm-2 col-sm-offset-4 col-xs-2 col-xs-offset-3">Saplings</p>
-										<p class="col-md-12 col-lg-12 col-sm-2 col-sm-offset-0 col-xs-2 col-xs-offset-2">9 - 12 Years</p>
+										<p class="col-md-12 col-lg-12 col-sm-12 col-xs-12">Saplings</p>
+										<p class="col-md-12 col-lg-12 col-sm-12 col-xs-12">9 - 12 Years</p>
 									</a>
 								</div>
 								<div class="col-md-3 col-lg-3">
 									<a href="oaks.html" class="btn btn-default">
-										<p class="col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0 col-sm-2 col-sm-offset-4 col-xs-2 col-xs-offset-3">Oaks</p>
-										<p class="col-md-12 col-lg-12 col-sm-2 col-sm-offset-0 col-xs-2 col-xs-offset-2">12 - 18 Years</p>
+										<p class="col-md-12 col-lg-12 col-sm-12 col-xs-12">Oaks</p>
+										<p class="col-md-12 col-lg-12 col-sm-12 col-xs-12">12 - 18 Years</p>
 									</a>
 								</div>
 							</div>
